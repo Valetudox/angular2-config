@@ -6,9 +6,8 @@ import { expect } from 'chai';
 describe('Pipe', function() {
 
   it('should give back the value for the given key', function() {
-    let service = new ConfigService();
+    let service = new ConfigService({ key: 'value' });
     let pipe = new ConfigPipe(service);
-    service.setConfig({ key: 'value' });
 
     expect(pipe.transform('key')).to.eql('value');
   });
