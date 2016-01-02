@@ -3,3 +3,5 @@ lib/
 test/
 .idea/
 .DS_Store
+.travis.yml
+.nyc_output/
