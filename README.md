@@ -1,5 +1,8 @@
 # Angular2 Config
 
+[![Coverage Status](https://coveralls.io/repos/Valetudox/angular2-config/badge.svg?branch=master&service=github)](https://coveralls.io/github/Valetudox/angular2-config?branch=master)
+[![Build Status](https://travis-ci.org/Valetudox/angular2-config.svg?branch=master)](https://travis-ci.org/Valetudox/angular2-config)
+
 This is a simple config solution for angular2. You should provide the configuration.
 
 Install
