@@ -5,6 +5,8 @@
 
 This is a simple config solution for angular2. You should provide the configuration.
 
+You can use with ES6 or typescript
+
 Install
 ---------
 
