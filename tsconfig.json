@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmitHelpers": false,
+    "declaration": true,
+    "inlineSourceMap": true,
+    "inlineSources": true
+  },
+  "files": [
+    "lib/index.ts",
+    "lib/pipe.ts",
+    "lib/service.ts",
+    "test/pipe.spec.ts",
+    "test/service.spec.ts",
+    "typings/main.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,20 +1,23 @@
 import { Injectable, Inject } from 'angular2/core';
-import nestedProperty from 'nested-property';
+const nestedProperty = require('nested-property');
 
 @Injectable()
 export class ConfigService {
+
+  private _config: any;
+
 
   constructor(@Inject('externalConfig') externalConfig) {
     this._config = externalConfig;
   }
 
 
-  setConfig(value) {
+  setConfig(value: any) {
     this._config = value;
   }
 
 
-  get(value) {
+  get(value: string) : any {
     return nestedProperty.get(this._config, value);
   }
 

@@ -4,11 +4,9 @@ import { ConfigService } from './';
 @Pipe({ name: 'config' })
 export class ConfigPipe {
 
-  constructor(configService: ConfigService) {
-    this._configService = configService;
-  }
+  constructor(private _configService: ConfigService) { }
 
-  transform(value) {
+  transform(value: string) : string {
     return this._configService.get(value);
   }
 
