@@ -13,7 +13,13 @@
     "build": "rm -rf dist/* && tsc --outDir dist",
     "test": "npm run build && mocha dist/test/*.spec.js",
     "prepublish": "npm test && npm run build",
-    "postinstall": "typings install"
+    "postinstall": "typings install",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "release": {
+    "verifyConditions": {
+      "path": "./node_modules/semantic-release/dist/lib/plugin-noop.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -26,18 +32,18 @@
   },
   "homepage": "https://github.com/Valetudox/angular2-config#readme",
   "devDependencies": {
-    "typescript": "1.8.2",
-    "typings": "0.6.8",
     "angular2": "2.0.0-beta.7",
     "chai": "^3.4.1",
     "coveralls": "^2.11.6",
     "es6-promise": "3.0.2",
     "es6-shim": "0.33.3",
-    "mocha": "^2.3.4",
-    "nyc": "^5.1.1",
     "es7-reflect-metadata": "1.5.5",
+    "mocha": "^2.3.4",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
+    "semantic-release": "4.3.5",
+    "typescript": "1.8.2",
+    "typings": "0.6.8",
     "zone.js": "0.5.15"
   },
   "dependencies": {
