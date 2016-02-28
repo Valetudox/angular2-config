@@ -1,7 +1,7 @@
 {
   "name": "angular2-config",
-  "version": "1.1.1",
-  "description": "",
+  "version": "2.0.1",
+  "description": "Angular2 module for store and provide a configuration",
   "keywords": [
     "angular",
     "angular2",
